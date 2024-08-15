@@ -1,0 +1,425 @@
+/*********************************************/
+/* Header Section */
+/*********************************************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+/*********************************************/
+/* Navigation-Header Section */
+/*********************************************/
+.Head-Nav-List {
+  list-style: none;
+  /* text-decoration: none; */
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+.Head-Nav-link:link,
+.Head-Nav-link:visited {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.Head-Nav-link:active,
+.Head-Nav-link:hover {
+  color: #cf711f;
+}
+.Nav-lst:link,
+.Nav-lst:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #e67e22;
+  color: #fff;
+}
+.Nav-lst:hover,
+.Nav-lst:active {
+  background-color: #cf711f;
+  color: #fff;
+}
+
+/*********************************************/
+/* Hero Section */
+/*********************************************/
+
+.Hero-Section {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.Hero-Card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  gap: 9.6rem;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 3.2rem;
+}
+
+.Hero-Text-Area {
+}
+
+.Hero-Branding {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+
+.Hero-Summary {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  /* text-align: left; */
+}
+
+.Hero-Img-Area {
+}
+
+.Heroimg {
+  width: 100%;
+  /* text-shadow: 1px 1px 2px #555; */
+}
+
+.btn:link,
+.btn:visited {
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  border-radius: 9px;
+  text-decoration: none;
+  display: inline-block;
+  transition: a 0.3s;
+  font-weight: 500;
+}
+
+.Hero-btn-1:link,
+.Hero-btn-1:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.Hero-btn-1:hover,
+.Hero-btn-1:active {
+  background-color: #cf711f;
+  color: #fff;
+}
+
+.Hero-btn-2 {
+  background-color: #fff;
+  color: #555;
+}
+
+.Hero-btn-2:hover,
+.Hero-btn-2:active {
+  background-color: #fdf2e9;
+  /* color: #fff; */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.Delivered-Meals {
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.Delivered-Images {
+  display: flex;
+}
+
+.Delivered-Images img {
+  border-radius: 50%;
+  height: 4.8rem;
+  width: 4.8rem;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.Delivered-Images img:last-child {
+  margin: 0;
+}
+
+.Delivere-Text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.Delivere-Text span {
+  color: #cf711f;
+}
+/*********************************************/
+/* How It Works Section */
+/*********************************************/
+.Featured-Section {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.Featured-Heading {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.75px;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+.Logos {
+  display: flex;
+  justify-content: space-around;
+}
+.Five-Logo {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+/*********************************************/
+/* How It Works Section */
+/*********************************************/
+.How-It-Works {
+  padding: 9.6rem 0;
+}
+.HW-Headings {
+  margin-bottom: 9.2rem;
+}
+
+/* .HW-Text-Box {
+} */
+
+.HW-Number {
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.HW-Description {
+  font-size: 1.8rem;
+  /* font-weight: 400; */
+  line-height: 1.8;
+}
+
+.HW-Image-Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.HW-Img {
+  width: 35%;
+  z-index: 10;
+}
+.HW-Image-Box::before {
+  content: "";
+  display: block;
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -2;
+}
+.HW-Image-Box::after {
+  content: "";
+  display: block;
+  width: 45%;
+  padding-bottom: 40%;
+  background-color: #fae5d3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/*********************************************/
+/* Meals Section */
+/*********************************************/
+.Section-Meals {
+  padding: 9.6rem 0;
+}
+.MS-Headings {
+  margin-bottom: 9.2rem;
+}
+.Meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+}
+.Meal:hover {
+  transform: translateY(-1.2rem);
+  overflow: hidden;
+  transition: all 0.4s;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.Meal-Img {
+  width: 100%;
+  overflow: hidden;
+}
+.Meal-Content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.Meal-Title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.Meal-Tag {
+  margin-bottom: 1.2rem;
+
+  display: flex;
+  gap: 0.4rem;
+}
+.Tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  /* background-color: #51cf66; */
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.Vegetarian {
+  background-color: #51cf66;
+}
+.Vegan {
+  background-color: #94d82d;
+}
+.Paleo {
+  background-color: #ffd43b;
+}
+.Meal-Attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.Meal-Attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.Attribut-Icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+/* List-of-diets */
+.List-Of-Diets {
+}
+
+.All-Recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+/*********************************************/
+/* Testimonial Section */
+/*********************************************/
+
+.Testimonial-Section {
+  background-color: #fae5d3;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+.Tesimonials-conatiner {
+  padding: 9.6rem;
+}
+.Testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+.Testimonial {
+}
+.Testimonial blockquote {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin: 1.6rem 0rem;
+}
+.Testimonial-Img {
+  width: 6.4rem;
+  border-radius: 50%;
+}
+.Testimonial-Customer-name {
+  font-size: 1.6rem;
+  color: #777;
+}
+.Gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.Gallery-Item {
+  overflow: hidden;
+}
+.Gallery-Item img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+.Gallery-Item img:hover {
+  transform: scale(1.1);
+}
+/*********************************************/
+/* Pricing Section */
+/*********************************************/
+.Pricing-Section {
+  padding: 9.6rem 0;
+}
+.pricing-plan {
+  background-color: #;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-price {
+  font-size: 7.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+.plan-signup {
+  text-align: center;
+  margin-top: 4.8rem;
+}
