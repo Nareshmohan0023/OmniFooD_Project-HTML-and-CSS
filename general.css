@@ -85,6 +85,9 @@ body {
   column-gap: 6.4rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -153,10 +156,10 @@ strong {
 Helper classes 
 *****************/
 .marginri816px {
-  margin-right: 1.6rem;
+  margin-right: 1.6rem !important;
 }
 .marginbot48px {
-  margin-bottom: 48px;
+  margin-bottom: 48px !important;
 }
 .Center-Text {
   text-align: center;
