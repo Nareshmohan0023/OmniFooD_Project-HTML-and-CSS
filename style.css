@@ -479,6 +479,12 @@
   font-size: 1.8rem;
   line-height: 1.8;
 }
+/************
+CTA section
+****************/
+.CTA-Section {
+  padding: 9.6rem 0 12.8rem 0;
+}
 .CTA-Layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -487,7 +493,7 @@
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   /* height: 50rem; */
-  margin-bottom: 9.6rem;
+  /* margin-bottom: 9.6rem; */
   overflow: hidden;
 }
 .CTA-Textbox .Secondary-Heading {
@@ -548,4 +554,68 @@
 .CTA-Form *:focus {
   outline: none !important;
   box-shadow: 0 0 0 0.8rem hsla(27, 83%, 95%, 0.504);
+}
+
+/************
+footer section
+****************/
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.footer {
+  padding: 12.8rem 0;
+  border-top: 2px solid #eee;
+}
+.Logo-clmn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.F-address {
+  margin-bottom: 2.4rem;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.Social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.Social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.Copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.Footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.Footer-link:link,
+.Footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+}
+.Footer-link:hover,
+.Footer-link:active {
+  color: #555;
 }

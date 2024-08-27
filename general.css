@@ -100,12 +100,18 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid-v-alignCent {
   align-items: center;
 }
 
 *:focus {
-  box-shadow: inset 0 0 0 0.8rem #e67e22;
+  box-shadow: inset 0 0 0 0.3rem #e67e22;
+  padding: 5px;
+  outline: none;
 }
 
 .Sub-Heading-HW-MS {
