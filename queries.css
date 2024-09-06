@@ -1,0 +1,220 @@
+/*********************************************/
+/*Bellow 1344px (Smaller Desktops)
+/*********************************************/
+@media (max-width:84em){
+    .Hero-Card {
+        max-width: 120rem;
+    }
+    .Heading-Primary{
+        font-size: 4.4rem;
+    }
+    .Gallery{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+}
+/*********************************************/
+/*Bellow 1200px (LANDSCAPE TABLETS)
+/*********************************************/
+@media(max-width:75em){
+    
+    html{
+        font-size: 56.25%;
+
+    }
+    .grid {
+       
+        row-gap: 6.4rem;
+        column-gap: 4.8rem;
+    }
+
+    
+    .Secondary-Heading {
+        font-size: 3.6rem;
+    }
+    .Tertiary-Heading{
+        font-size: 2.4rem;
+    }
+    .header{
+        padding: 0 3.2rem;
+    }
+    .Hero-Card{
+        gap: 4.8rem;
+    }
+    .Head-Nav-List{
+        gap: 3.2rem;
+    }
+    .Tesimonials-conatiner {
+        padding: 9.6rem 3.2rem;
+      }
+    .Gallery{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.4rem;
+    }
+}
+
+/* Below 944px for tablets */
+@media(max-width:59em){
+    html{
+        font-size: 50%;
+    }
+    .Hero-Card{
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+    .Heroimg {
+        width: 60%;
+        /* text-shadow: 1px 1px 2px #555; */
+      }
+      .Hero-Text-Area,.Hero-Img-Area{
+        text-align: center;
+      }
+      .Delivered-Meals{
+        justify-content: center;
+
+      }
+      .Five-Logo{
+        height: 2.4rem;
+      }
+      .HW-Number{
+        font-size: 7.4rem;
+      }
+      .Meal-Content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+      }
+      .Testimonial-Section {
+        grid-template-columns: 1fr;
+      }
+      .Gallery{
+        grid-template-columns: repeat(6,1fr);
+    }
+    .CTA-Layout{
+        grid-template-columns: 3fr 2fr;
+    }
+    .CTA-Form{
+        grid-template-columns: 1fr;
+    }
+    .Form-btn {
+        margin-top: 1.2rem;
+    }
+    .btn-mobile-nav{
+        display: block;
+    }
+    .Head-Nav{
+        background-color: blue;
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #ffffffec;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        /*Hide nav*/
+       opacity: 0;
+       /* hide as un accessible */
+       pointer-events: none;
+       /*Hide it from ecreen readers*/
+       visibility: hidden;
+
+    }
+    .nav-open .Head-Nav{
+        opacity: 1;
+        pointer-events:auto;
+        visibility: visible;
+    }
+    .Head-Nav-List{
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+    .nav-open .mob-nav-close{
+        display: block;
+      }
+      .nav-open .mob-nav-menu{
+        display: none;
+      }  
+    .Head-Nav-link:link,
+    .Head-Nav-link:visited{
+        font-size: 3rem;
+    }
+   
+}
+/*Smaller Tablets*/
+@media(max-width:44em){
+    .grid-3-cols,.grid-4-cols{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .List-Of-Diets{
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+   .Secondary-Heading{
+    margin-bottom: 4.8rem;
+    }
+    .pricing-plan{
+        width: 100%;
+    }
+    .grid--footer{
+        grid-template-columns: repeat(6,1fr);
+    }
+    .Address-clmn,.Logo-clmn{
+        grid-column: span 3 ;
+    }
+    .Nav-clmn{
+        grid-row: 1;
+        grid-column: span 2;
+    }
+}
+/* below 544px for smaller tablets */
+@media(max-width:34em){
+    .grid-2-cols,.grid-3-cols,.grid-4-cols{
+        grid-template-columns: 1fr;
+    }
+    .grid{
+        gap: 4.8rem;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+        padding: 3.2rem;
+        gap: 6.4rem;
+    }
+    .btn,
+.btn:link,
+.btn:visited {
+    padding: 1.8rem 1rem;
+}
+.Heroimg{
+    width: 80%;
+}
+.Logos .Five-Logo{
+    height: 1.2rem;
+}
+.HW-Image-Box:nth-child(2){
+    grid-row: 1;
+
+}
+.HW-Image-Box:nth-child(6){
+    grid-row: 5;
+
+}
+.HW-Image-Box{
+    transform: translateY(2.4rem);
+}
+.Testimonials{
+    grid-template-columns: 1fr;
+}
+.Gallery{
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.2rem;
+}
+.CTA-Layout{
+    grid-template-columns: 1fr;
+}
+.CTA-Img{
+    height: 36rem;
+    grid-row: 1;
+}
+}
