@@ -12,6 +12,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="./script.js"></script>
     <link href="./general.css" rel="stylesheet" />
     <link href="./style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./queries.css">
@@ -27,7 +29,7 @@
     />
   </head>
   <body>
-    <header class="header ">
+    <header class="header sticky">
       <a href="#">
         <img class="logo" alt="logo" src="./content/img/omnifood-logo.png"
       /></a>
@@ -60,10 +62,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn Hero-btn-1 marginri816px"
+            <a href="#cta" class="btn Hero-btn-1 marginri816px"
               >Start Eating Well.
             </a>
-            <a href="#" class="btn Hero-btn-2">Learn More &rarr;</a>
+            <a href="#section1" class="btn Hero-btn-2">Learn More &rarr;</a>
             <div class="Delivered-Meals">
               <div class="Delivered-Images">
                 <img
@@ -572,7 +574,7 @@
           </div>
         </div>
       </section>
-      <section class="CTA-Section" id="section5">
+      <section class="CTA-Section" id="cta" >
         <div class="container">
           <div class="CTA-Layout">
             <div class="CTA-Textbox">
@@ -652,7 +654,7 @@
             </li>
           </ul>
           <p class="Copyright">
-            &copy; 2027 by Omnifood,inc.All rights reserved"
+            &copy; <span class="year">2027</span> by Omnifood,inc.All rights reserved"
           </p>
         </div>
         <div class="Address-clmn">

@@ -100,9 +100,9 @@
     }
     .btn-mobile-nav{
         display: block;
+        z-index: 999;
     }
     .Head-Nav{
-        background-color: blue;
         position: absolute;
         top:0;
         left: 0;

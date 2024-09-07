@@ -36,6 +36,8 @@
 /*********************************************/
 html {
   font-size: 62.5%;
+  /* scroll-behavior: smooth;not working in safari */
+
 }
 
 body {
